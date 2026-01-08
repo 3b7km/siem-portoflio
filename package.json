@@ -1,0 +1,24 @@
+{
+  "name": "siem-portfolio",
+  "version": "1.0.0",
+  "description": "SIEM Security Solution - Enterprise Security Platform",
+  "main": "index.html",
+  "scripts": {
+    "dev": "serve .",
+    "start": "serve .",
+    "build": "echo 'No build step required for static site'",
+    "preview": "serve ."
+  },
+  "keywords": [
+    "SIEM",
+    "Security",
+    "Anomaly Detection",
+    "AI",
+    "Cybersecurity"
+  ],
+  "author": "SIEM Project Team",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}
