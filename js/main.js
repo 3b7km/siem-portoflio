@@ -2,96 +2,116 @@
 
 // DOM Elements
 const navbar = document.getElementById('navbar');
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('navMenu');
-const navLinks = document.querySelectorAll('.nav-link');
+const logo = document.getElementById('logo');
+const carouselTrack = document.getElementById('carouselTrack');
+const carouselPrevBtn = document.getElementById('carouselPrev');
+const carouselNextBtn = document.getElementById('carouselNext');
+const carouselCards = document.querySelectorAll('.carousel-card');
 const sections = document.querySelectorAll('.section');
 const timelineItems = document.querySelectorAll('.timeline-item');
 
-// Mobile Menu Toggle
-hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-    hamburger.classList.toggle('active');
-    
-    // Animate hamburger
-    const spans = hamburger.querySelectorAll('span');
-    if (navMenu.classList.contains('active')) {
-        spans[0].style.transform = 'rotate(45deg) translateY(8px)';
-        spans[1].style.opacity = '0';
-        spans[2].style.transform = 'rotate(-45deg) translateY(-8px)';
-    } else {
-        spans[0].style.transform = 'none';
-        spans[1].style.opacity = '1';
-        spans[2].style.transform = 'none';
-    }
-});
-
-// Close mobile menu when clicking on a link
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-        hamburger.classList.remove('active');
-        const spans = hamburger.querySelectorAll('span');
-        spans[0].style.transform = 'none';
-        spans[1].style.opacity = '1';
-        spans[2].style.transform = 'none';
-    });
-});
-
-// Navbar scroll effect
-let lastScroll = 0;
-window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    
-    if (currentScroll > 100) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-    
-    lastScroll = currentScroll;
-});
-
-// Active section highlighting in navigation
-const observerOptions = {
-    root: null,
-    rootMargin: '-20% 0px -70% 0px',
-    threshold: 0
-};
-
-const sectionObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const id = entry.target.getAttribute('id');
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${id}`) {
-                    link.classList.add('active');
-                }
+// Logo Click - Navigate to Home
+if (logo) {
+    logo.addEventListener('click', (e) => {
+        e.preventDefault();
+        const heroSection = document.getElementById('hero');
+        if (heroSection) {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
             });
         }
     });
-}, observerOptions);
+}
 
-sections.forEach(section => {
-    sectionObserver.observe(section);
+// Carousel Navigation
+let scrollPos = 0;
+const cardWidth = 120;
+
+function updateCarouselButtons() {
+    if (carouselTrack) {
+        const maxScroll = carouselTrack.scrollWidth - carouselTrack.clientWidth;
+        carouselPrevBtn.disabled = scrollPos <= 0;
+        carouselNextBtn.disabled = scrollPos >= maxScroll;
+
+        carouselPrevBtn.style.opacity = scrollPos <= 0 ? '0.5' : '1';
+        carouselNextBtn.style.opacity = scrollPos >= maxScroll ? '0.5' : '1';
+    }
+}
+
+carouselPrevBtn.addEventListener('click', () => {
+    scrollPos = Math.max(scrollPos - cardWidth, 0);
+    carouselTrack.scrollLeft = scrollPos;
+    updateCarouselButtons();
 });
 
-// Smooth scroll for navigation links
-navLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const targetId = link.getAttribute('href');
-        const targetSection = document.querySelector(targetId);
-        
+carouselNextBtn.addEventListener('click', () => {
+    const maxScroll = carouselTrack.scrollWidth - carouselTrack.clientWidth;
+    scrollPos = Math.min(scrollPos + cardWidth, maxScroll);
+    carouselTrack.scrollLeft = scrollPos;
+    updateCarouselButtons();
+});
+
+// Carousel Card Click - Navigate to Section
+carouselCards.forEach(card => {
+    card.addEventListener('click', () => {
+        const targetId = card.getAttribute('data-target');
+        const targetSection = document.getElementById(targetId);
+
         if (targetSection) {
-            const offsetTop = targetSection.offsetTop - 70;
+            carouselCards.forEach(c => c.classList.remove('active'));
+            card.classList.add('active');
+
+            const offsetTop = targetSection.offsetTop - 130;
             window.scrollTo({
                 top: offsetTop,
                 behavior: 'smooth'
             });
         }
     });
+});
+
+// Update carousel active card on scroll
+window.addEventListener('scroll', () => {
+    let currentSection = null;
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (window.scrollY >= sectionTop - 200 && window.scrollY < sectionTop + sectionHeight - 200) {
+            currentSection = section.getAttribute('id');
+        }
+    });
+
+    if (currentSection) {
+        carouselCards.forEach(card => {
+            if (card.getAttribute('data-target') === currentSection) {
+                card.classList.add('active');
+            } else {
+                card.classList.remove('active');
+            }
+        });
+    }
+});
+
+// Navbar scroll effect
+let lastScroll = 0;
+window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll > 100) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+
+    lastScroll = currentScroll;
+});
+
+// Initialize carousel buttons on load
+window.addEventListener('load', () => {
+    updateCarouselButtons();
 });
 
 // Fade-in animation on scroll
@@ -384,4 +404,3 @@ if ('performance' in window) {
         console.log(`Page load time: ${pageLoadTime}ms`);
     });
 }
-
