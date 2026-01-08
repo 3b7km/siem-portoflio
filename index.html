@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SIEM Security Solution - Elevating Enterprise Security Using AI-Powered Anomaly Detection">
+    <meta name="keywords" content="SIEM, Security, Anomaly Detection, AI, Machine Learning, Cybersecurity">
+    <meta name="author" content="SIEM Project Team">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SIEM Security Solution - Enterprise Security">
+    <meta property="og:description" content="AI-powered SIEM solution for network anomaly detection and threat classification">
+    
+    <title>SIEM Security Solution | Enterprise Security Platform</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="assets/logos/siem-logo.png" alt="SIEM Enterprise Security Logo" class="logo-img">
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#overview" class="nav-link">Overview</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#models" class="nav-link">AI Models</a></li>
+                    <li><a href="#dashboard" class="nav-link">Dashboard</a></li>
+                    <li><a href="#methodology" class="nav-link">Methodology</a></li>
+                    <li><a href="#results" class="nav-link">Results</a></li>
+                    <li><a href="#visualizations" class="nav-link">Visualizations</a></li>
+                    <li><a href="#tech-stack" class="nav-link">Tech Stack</a></li>
+                    <li><a href="#video" class="nav-link">Video</a></li>
+                    <li><a href="#links" class="nav-link">Links</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <img src="assets/logos/siem-logo.png" alt="SIEM Enterprise Security Logo" class="hero-logo-img">
+                </div>
+                <h1 class="hero-title">
+                    Elevating Enterprise<br>
+                    Security Using a<br>
+                    <span class="accent-text">SIEM Solution</span>
+                </h1>
+                <p class="hero-tagline">"less noise more security"</p>
+                <p class="hero-description">
+                    AI-powered network anomaly detection and threat classification system 
+                    that reduces alert fatigue and enhances security operations.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#overview" class="btn btn-secondary">
+                        <i class="fas fa-arrow-down"></i> Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="section overview">
+        <div class="container">
+            <h2 class="section-title">Project Overview</h2>
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="card-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>The Problem</h3>
+                    <p>Modern enterprises are flooded with security data that generates excessive alerts, creating noise that hides real threats and slows response. Generic SIEM platforms use one-size-fits-all templates that don't adapt to specific business environments.</p>
+                </div>
+                <div class="overview-card">
+                    <div class="card-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Our Solution</h3>
+                    <p>A customized SIEM solution that adapts to each environment's data and behavior—reducing alert fatigue, sharpening threat detection, and delivering security that is precise, relevant, and effective.</p>
+                </div>
+                <div class="overview-card">
+                    <div class="card-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Key Value</h3>
+                    <p>Instead of forcing organizations into predefined models, our solution learns from your environment, detects unknown attack patterns, and provides actionable alerts with clear prioritization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Real-Time Detection</h3>
+                    <p>Advanced AI models detect anomalies instantly, providing immediate threat alerts to your security team with minimal latency.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Multi-Model AI</h3>
+                    <p>Combines multiple machine learning algorithms including One-Class SVM, Isolation Forest, GMM, and XGBoost for comprehensive threat detection.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Interactive Dashboard</h3>
+                    <p>ELK Stack-like interface with interactive visualizations, real-time monitoring, advanced search, and comprehensive alert management.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>SIEM Integration</h3>
+                    <p>REST API support for seamless integration with existing security infrastructure. Structured alerts with severity classification and recommendations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Models Section -->
+    <section id="models" class="section models">
+        <div class="container">
+            <h2 class="section-title">AI Models</h2>
+            <p class="section-subtitle">Five powerful machine learning models for comprehensive anomaly detection</p>
+            <div class="models-grid">
+                <div class="model-card primary">
+                    <div class="model-badge primary">Primary</div>
+                    <div class="model-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>One-Class SVM</h3>
+                    <p class="model-type">Unsupervised Anomaly Detection</p>
+                    <p class="model-description">Trains on normal traffic only, detects unknown attack patterns. Ideal for SIEM integration and real-time detection.</p>
+                    <div class="model-features">
+                        <span class="feature-tag">No Labels Required</span>
+                        <span class="feature-tag">Unknown Attacks</span>
+                        <span class="feature-tag">Real-Time</span>
+                    </div>
+                </div>
+                <div class="model-card">
+                    <div class="model-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3>Isolation Forest</h3>
+                    <p class="model-type">Unsupervised Outlier Detection</p>
+                    <p class="model-description">Fast training and prediction. Handles high-dimensional data well. Effective for initial analysis and outlier identification.</p>
+                    <div class="model-features">
+                        <span class="feature-tag">Fast</span>
+                        <span class="feature-tag">High-Dimensional</span>
+                        <span class="feature-tag">Scalable</span>
+                    </div>
+                </div>
+                <div class="model-card">
+                    <div class="model-icon">
+                        <i class="fas fa-chart-area"></i>
+                    </div>
+                    <h3>Gaussian Mixture Model</h3>
+                    <p class="model-type">Probabilistic Detection</p>
+                    <p class="model-description">Probabilistic approach with density estimation. Provides probability scores and models complex distributions.</p>
+                    <div class="model-features">
+                        <span class="feature-tag">Probabilistic</span>
+                        <span class="feature-tag">Density-Based</span>
+                        <span class="feature-tag">Multi-Modal</span>
+                    </div>
+                </div>
+                <div class="model-card">
+                    <div class="model-icon">
+                        <i class="fas fa-check-double"></i>
+                    </div>
+                    <h3>XGBoost Binary</h3>
+                    <p class="model-type">Supervised Classification</p>
+                    <p class="model-description">High-accuracy binary classification. Handles class imbalance and provides feature importance analysis.</p>
+                    <div class="model-features">
+                        <span class="feature-tag">High Accuracy</span>
+                        <span class="feature-tag">Feature Importance</span>
+                        <span class="feature-tag">Production Ready</span>
+                    </div>
+                </div>
+                <div class="model-card">
+                    <div class="model-icon">
+                        <i class="fas fa-list"></i>
+                    </div>
+                    <h3>XGBoost Multi-Class</h3>
+                    <p class="model-type">Attack Classification</p>
+                    <p class="model-description">Classifies attacks into specific categories. Identifies attack types for detailed threat analysis.</p>
+                    <div class="model-features">
+                        <span class="feature-tag">Multi-Class</span>
+                        <span class="feature-tag">Attack Types</span>
+                        <span class="feature-tag">Detailed Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="section dashboard">
+        <div class="container">
+            <h2 class="section-title">Security Dashboard</h2>
+            <p class="section-subtitle">Comprehensive visualization and monitoring interface</p>
+            <div class="dashboard-content">
+                <div class="dashboard-features">
+                    <div class="dashboard-feature">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h4>Overview Dashboard</h4>
+                        <p>Real-time KPIs, timeline charts, severity distribution, and top anomalous files</p>
+                    </div>
+                    <div class="dashboard-feature">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h4>Alerts Management</h4>
+                        <p>Comprehensive alerts table with advanced filtering, search, and detailed views</p>
+                    </div>
+                    <div class="dashboard-feature">
+                        <i class="fas fa-chart-scatter"></i>
+                        <h4>Outliers Analysis</h4>
+                        <p>3D scatter plots, detection method comparison, and feature correlation heatmaps</p>
+                    </div>
+                    <div class="dashboard-feature">
+                        <i class="fas fa-desktop"></i>
+                        <h4>Real-Time Monitor</h4>
+                        <p>Live alert feed with Server-Sent Events, alert rate charts, and severity gauges</p>
+                    </div>
+                    <div class="dashboard-feature">
+                        <i class="fas fa-search"></i>
+                        <h4>Advanced Search</h4>
+                        <p>Cross-dataset search with regex support, highlighting, and keyboard shortcuts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section id="methodology" class="section methodology">
+        <div class="container">
+            <h2 class="section-title">Methodology</h2>
+            <div class="methodology-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                        <h3>Intelligent Data Ingestion & Analysis</h3>
+                        <p>The solution begins by ingesting and profiling security data from multiple sources to establish a clean, consistent analytical baseline. This ensures the data is detection-ready and scalable for enterprise environments.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                        <h3>Multi-Model AI Detection Engine</h3>
+                        <p>An adaptive detection layer combines One-Class SVM for unsupervised baseline learning with Isolation Forest and GMM for enhanced outlier detection. Where labeled data exists, XGBoost is used to deliver precise threat classification and prioritization.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content">
+                        <h3>Real-Time SIEM Pipeline</h3>
+                        <p>Detection operates within a real-time SIEM pipeline, continuously analyzing events and validating effectiveness through simulated attack scenarios such as DDoS and brute-force activity. This ensures production-ready performance under realistic conditions.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">4</div>
+                    <div class="timeline-content">
+                        <h3>Actionable Alerting & SOC Visibility</h3>
+                        <p>Anomalies are converted into structured, severity-driven SIEM alerts and visualized through SOC-focused dashboards. This delivers reduced noise, faster triage, and clear operational insight from detection to response.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="section results">
+        <div class="container">
+            <h2 class="section-title">Results & Outcomes</h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-volume-mute"></i>
+                    </div>
+                    <h3>Less Alert Noise</h3>
+                    <p>The system learns your normal environment and filters out low-value signals, allowing security teams to focus on real, high-impact threats instead of false positives.</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Earlier Threat Detection</h3>
+                    <p>AI-driven anomaly detection identifies suspicious behavior that traditional rules often miss, helping uncover threats earlier in the attack lifecycle.</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Faster Response</h3>
+                    <p>Severity-based, structured alerts give immediate context, reducing investigation time and enabling quicker, more confident response decisions.</p>
+                </div>
+                <div class="result-card">
+                    <div class="result-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>SOC-Level Visibility</h3>
+                    <p>Real-time dashboards provide a concise view of security posture, trends, and risk levels—supporting both daily operations and executive oversight.</p>
+                </div>
+            </div>
+            <div class="benefits-list">
+                <h3>Key Benefits</h3>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Lower alert noise through anomaly detection + smarter signal interpretation</li>
+                    <li><i class="fas fa-check-circle"></i> Actionable alerts with severity scoring and recommended response steps</li>
+                    <li><i class="fas fa-check-circle"></i> Multiple detection options (unsupervised + supervised) depending on whether labels exist</li>
+                    <li><i class="fas fa-check-circle"></i> Scalable pipeline that supports large datasets and sampling controls</li>
+                    <li><i class="fas fa-check-circle"></i> Operational visibility via dashboard KPIs, timelines, and severity breakdown</li>
+                    <li><i class="fas fa-check-circle"></i> Integration-ready outputs (JSON alerts + CSV results) that can fit SIEM workflows</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visualizations Section -->
+    <section id="visualizations" class="section visualizations">
+        <div class="container">
+            <div class="viz-header">
+                <h2 class="section-title">Project Visualizations</h2>
+                <p class="section-subtitle">Explore comprehensive analytics, model performance metrics, and security insights</p>
+            </div>
+
+            <!-- Featured Visualization -->
+            <div class="viz-featured">
+                <div class="viz-featured-content">
+                    <div class="viz-featured-badge">
+                        <i class="fas fa-star"></i> Featured
+                    </div>
+                    <h3>SIEM Alert Dashboard</h3>
+                    <p>Real-time security monitoring interface with comprehensive alert management, KPIs, and interactive visualizations</p>
+                    <div class="viz-featured-image" onclick="openLightbox('assets/images/siem_alert_dashboard.png', 'SIEM Alert Dashboard')">
+                        <img src="assets/images/siem_alert_dashboard.png" 
+                             alt="SIEM Alert Dashboard" 
+                             onload="this.style.opacity='1'; this.style.visibility='visible';"
+                             onerror="console.error('Failed to load image:', this.src); this.style.display='none';">
+                        <div class="viz-featured-overlay">
+                            <i class="fas fa-expand"></i>
+                            <span>Click to view full size</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Model Performance Comparison - Standalone Section -->
+            <div class="viz-standalone">
+                <div class="viz-standalone-header">
+                    <div class="viz-standalone-badge">
+                        <i class="fas fa-trophy"></i> Model Comparison
+                    </div>
+                    <h3>AI Model Performance Comparison</h3>
+                    <p>Comprehensive side-by-side evaluation of all 5 AI models showing accuracy metrics and performance rankings</p>
+                </div>
+                <div class="viz-standalone-content">
+                    <svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg" class="viz-standalone-svg">
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#8c52ff;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#4d238b;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#8e50ec;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#4d238b;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Background -->
+                        <rect width="1000" height="600" fill="#1a1a2e" rx="12"/>
+                        
+                        <!-- Title -->
+                        <text x="500" y="50" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#8c52ff" text-anchor="middle">AI Model Performance Comparison</text>
+                        <text x="500" y="85" font-family="Arial, sans-serif" font-size="16" fill="#d9d9d9" text-anchor="middle">Comprehensive Evaluation Across All Detection Models</text>
+                        
+                        <!-- Models -->
+                        <!-- One-Class SVM -->
+                        <g transform="translate(100, 150)">
+                            <rect width="150" height="350" fill="url(#grad1)" rx="10" opacity="0.9"/>
+                            <text x="75" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#f7f7f7" text-anchor="middle">One-Class SVM</text>
+                            <text x="75" y="50" font-family="Arial" font-size="12" fill="#d9d9d9" text-anchor="middle">Unsupervised</text>
+                            <rect x="25" y="300" width="100" height="40" fill="#00ff88" rx="6"/>
+                            <text x="75" y="325" font-family="Arial" font-size="14" font-weight="bold" fill="#0a0e27" text-anchor="middle">94.2%</text>
+                            <text x="75" y="345" font-family="Arial" font-size="11" fill="#0a0e27" text-anchor="middle">Accuracy</text>
+                        </g>
+                        
+                        <!-- Isolation Forest -->
+                        <g transform="translate(280, 150)">
+                            <rect width="150" height="350" fill="url(#grad2)" rx="10" opacity="0.9"/>
+                            <text x="75" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#f7f7f7" text-anchor="middle">Isolation Forest</text>
+                            <text x="75" y="50" font-family="Arial" font-size="12" fill="#d9d9d9" text-anchor="middle">Unsupervised</text>
+                            <rect x="25" y="320" width="100" height="30" fill="#00ff88" rx="6"/>
+                            <text x="75" y="340" font-family="Arial" font-size="14" font-weight="bold" fill="#0a0e27" text-anchor="middle">91.8%</text>
+                            <text x="75" y="355" font-family="Arial" font-size="11" fill="#0a0e27" text-anchor="middle">Accuracy</text>
+                        </g>
+                        
+                        <!-- XGBoost Binary -->
+                        <g transform="translate(460, 150)">
+                            <rect width="150" height="350" fill="url(#grad1)" rx="10" opacity="0.9"/>
+                            <text x="75" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#f7f7f7" text-anchor="middle">XGBoost Binary</text>
+                            <text x="75" y="50" font-family="Arial" font-size="12" fill="#d9d9d9" text-anchor="middle">Supervised</text>
+                            <rect x="25" y="280" width="100" height="60" fill="#00ff88" rx="6"/>
+                            <text x="75" y="315" font-family="Arial" font-size="14" font-weight="bold" fill="#0a0e27" text-anchor="middle">96.5%</text>
+                            <text x="75" y="335" font-family="Arial" font-size="11" fill="#0a0e27" text-anchor="middle">Accuracy</text>
+                        </g>
+                        
+                        <!-- XGBoost Multi-Class -->
+                        <g transform="translate(640, 150)">
+                            <rect width="150" height="350" fill="url(#grad2)" rx="10" opacity="0.9"/>
+                            <text x="75" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#f7f7f7" text-anchor="middle">XGBoost Multi</text>
+                            <text x="75" y="50" font-family="Arial" font-size="12" fill="#d9d9d9" text-anchor="middle">Supervised</text>
+                            <rect x="25" y="250" width="100" height="80" fill="#00ff88" rx="6"/>
+                            <text x="75" y="295" font-family="Arial" font-size="14" font-weight="bold" fill="#0a0e27" text-anchor="middle">98.1%</text>
+                            <text x="75" y="315" font-family="Arial" font-size="11" fill="#0a0e27" text-anchor="middle">Accuracy</text>
+                        </g>
+                        
+                        <!-- GMM -->
+                        <g transform="translate(820, 150)">
+                            <rect width="150" height="350" fill="url(#grad1)" rx="10" opacity="0.9"/>
+                            <text x="75" y="30" font-family="Arial" font-size="16" font-weight="bold" fill="#f7f7f7" text-anchor="middle">GMM</text>
+                            <text x="75" y="50" font-family="Arial" font-size="12" fill="#d9d9d9" text-anchor="middle">Unsupervised</text>
+                            <rect x="25" y="310" width="100" height="40" fill="#00ff88" rx="6"/>
+                            <text x="75" y="335" font-family="Arial" font-size="14" font-weight="bold" fill="#0a0e27" text-anchor="middle">92.3%</text>
+                            <text x="75" y="355" font-family="Arial" font-size="11" fill="#0a0e27" text-anchor="middle">Accuracy</text>
+                        </g>
+                        
+                        <!-- Performance Metrics -->
+                        <g transform="translate(50, 540)">
+                            <circle cx="10" cy="0" r="8" fill="#00ff88"/>
+                            <text x="25" y="5" font-family="Arial" font-size="14" fill="#d9d9d9">High Performance (90%+)</text>
+                            
+                            <circle cx="280" cy="0" r="8" fill="#8c52ff"/>
+                            <text x="295" y="5" font-family="Arial" font-size="14" fill="#d9d9d9">Unsupervised Models</text>
+                            
+                            <circle cx="550" cy="0" r="8" fill="#8e50ec"/>
+                            <text x="565" y="5" font-family="Arial" font-size="14" fill="#d9d9d9">Supervised Models</text>
+                        </g>
+                        
+                        <!-- Connection Lines -->
+                        <path d="M 175 350 L 355 350" stroke="#8c52ff" stroke-width="3" opacity="0.5" fill="none"/>
+                        <path d="M 355 350 L 535 350" stroke="#8c52ff" stroke-width="3" opacity="0.5" fill="none"/>
+                        <path d="M 535 350 L 715 350" stroke="#8c52ff" stroke-width="3" opacity="0.5" fill="none"/>
+                        <path d="M 715 350 L 895 350" stroke="#8c52ff" stroke-width="3" opacity="0.5" fill="none"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="viz-filters">
+                <button class="viz-filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i> All Visualizations
+                </button>
+                <button class="viz-filter-btn" data-filter="dashboard">
+                    <i class="fas fa-chart-line"></i> Dashboard & Analysis
+                </button>
+                <button class="viz-filter-btn" data-filter="models">
+                    <i class="fas fa-brain"></i> Model Performance
+                </button>
+                <button class="viz-filter-btn" data-filter="comparisons">
+                    <i class="fas fa-balance-scale"></i> Comparisons
+                </button>
+            </div>
+
+            <!-- Visualizations Grid -->
+            <div class="viz-masonry">
+                <!-- Dashboard & Analysis -->
+                <div class="viz-item" data-category="dashboard">
+                    <div class="viz-item-inner">
+                        <div class="viz-item-image">
+                            <img src="assets/images/outlier_detection_analysis.png" alt="Outlier Detection Analysis">
+                            <div class="viz-item-overlay">
+                                <button class="viz-item-btn" onclick="openLightbox('assets/images/outlier_detection_analysis.png', 'Outlier Detection Analysis')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="viz-item-content">
+                            <span class="viz-item-category">Dashboard & Analysis</span>
+                            <h4>Outlier Detection Analysis</h4>
+                            <p>Comprehensive visualization of detected outliers across multiple detection methods</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="viz-item" data-category="dashboard">
+                    <div class="viz-item-inner">
+                        <div class="viz-item-image">
+                            <img src="assets/images/anomaly_detection_results.png" alt="Anomaly Detection Results">
+                            <div class="viz-item-overlay">
+                                <button class="viz-item-btn" onclick="openLightbox('assets/images/anomaly_detection_results.png', 'Anomaly Detection Results')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="viz-item-content">
+                            <span class="viz-item-category">Dashboard & Analysis</span>
+                            <h4>Anomaly Detection Results</h4>
+                            <p>AI model performance metrics and anomaly detection outcomes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="viz-item" data-category="dashboard">
+                    <div class="viz-item-inner">
+                        <div class="viz-item-image">
+                            <img src="assets/images/feature_wise_outliers.png" alt="Feature-wise Outliers">
+                            <div class="viz-item-overlay">
+                                <button class="viz-item-btn" onclick="openLightbox('assets/images/feature_wise_outliers.png', 'Feature-wise Outliers')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="viz-item-content">
+                            <span class="viz-item-category">Dashboard & Analysis</span>
+                            <h4>Feature-wise Outliers</h4>
+                            <p>Detailed breakdown of outliers detected by individual features</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comparisons -->
+                <div class="viz-item" data-category="comparisons">
+                    <div class="viz-item-inner">
+                        <div class="viz-item-image">
+                            <img src="assets/images/normal_vs_anomaly_comparison.png" alt="Normal vs Anomaly Comparison">
+                            <div class="viz-item-overlay">
+                                <button class="viz-item-btn" onclick="openLightbox('assets/images/normal_vs_anomaly_comparison.png', 'Normal vs Anomaly Comparison')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="viz-item-content">
+                            <span class="viz-item-category">Comparisons</span>
+                            <h4>Normal vs Anomaly</h4>
+                            <p>Comparative analysis between normal network traffic and detected anomalies</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="viz-item" data-category="comparisons">
+                    <div class="viz-item-inner">
+                        <div class="viz-item-image">
+                            <img src="assets/images/chart_distribution_comparison.png" alt="Distribution Comparison">
+                            <div class="viz-item-overlay">
+                                <button class="viz-item-btn" onclick="openLightbox('assets/images/chart_distribution_comparison.png', 'Distribution Comparison')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="viz-item-content">
+                            <span class="viz-item-category">Comparisons</span>
+                            <h4>Distribution Comparison</h4>
+                            <p>Statistical distribution analysis across different data segments</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Model Performance -->
+                <div class="viz-item" data-category="models">
+                    <div class="viz-item-inner">
+                        <div class="viz-item-image">
+                            <img src="assets/images/confusion_matrix.png" alt="XGBoost Confusion Matrix">
+                            <div class="viz-item-overlay">
+                                <button class="viz-item-btn" onclick="openLightbox('assets/images/confusion_matrix.png', 'XGBoost Binary Classification - Confusion Matrix')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="viz-item-content">
+                            <span class="viz-item-category">Model Performance</span>
+                            <h4>XGBoost Confusion Matrix</h4>
+                            <p>Binary classification performance with precision, recall, and accuracy metrics</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="viz-item" data-category="models">
+                    <div class="viz-item-inner">
+                        <div class="viz-item-image">
+                            <img src="assets/images/feature_importance.png" alt="Feature Importance">
+                            <div class="viz-item-overlay">
+                                <button class="viz-item-btn" onclick="openLightbox('assets/images/feature_importance.png', 'Feature Importance Analysis')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="viz-item-content">
+                            <span class="viz-item-category">Model Performance</span>
+                            <h4>Feature Importance</h4>
+                            <p>XGBoost feature importance ranking showing key indicators for anomaly detection</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="viz-item" data-category="models">
+                    <div class="viz-item-inner">
+                        <div class="viz-item-image">
+                            <img src="assets/images/ocsvm_confusion_matrix.jpg" alt="One-Class SVM Confusion Matrix">
+                            <div class="viz-item-overlay">
+                                <button class="viz-item-btn" onclick="openLightbox('assets/images/ocsvm_confusion_matrix.jpg', 'One-Class SVM - Confusion Matrix')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="viz-item-content">
+                            <span class="viz-item-category">Model Performance</span>
+                            <h4>One-Class SVM Results</h4>
+                            <p>Primary SIEM model performance metrics for unsupervised anomaly detection</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="viz-item" data-category="models">
+                    <div class="viz-item-inner">
+                        <div class="viz-item-image">
+                            <img src="assets/images/isolation_forest_confusion.jpg" alt="Isolation Forest Confusion Matrix">
+                            <div class="viz-item-overlay">
+                                <button class="viz-item-btn" onclick="openLightbox('assets/images/isolation_forest_confusion.jpg', 'Isolation Forest - Confusion Matrix')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="viz-item-content">
+                            <span class="viz-item-category">Model Performance</span>
+                            <h4>Isolation Forest Results</h4>
+                            <p>Fast outlier detection algorithm performance evaluation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="viz-item" data-category="models">
+                    <div class="viz-item-inner">
+                        <div class="viz-item-image">
+                            <img src="assets/images/multiclass_confusion.jpg" alt="Multi-Class XGBoost Confusion Matrix">
+                            <div class="viz-item-overlay">
+                                <button class="viz-item-btn" onclick="openLightbox('assets/images/multiclass_confusion.jpg', 'Multi-Class XGBoost - Confusion Matrix')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="viz-item-content">
+                            <span class="viz-item-category">Model Performance</span>
+                            <h4>Multi-Class Classification</h4>
+                            <p>Attack type classification results with detailed category breakdown</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="viz-item" data-category="models">
+                    <div class="viz-item-inner">
+                        <div class="viz-item-image">
+                            <img src="assets/images/gmm_confusion.png" alt="GMM Confusion Matrix">
+                            <div class="viz-item-overlay">
+                                <button class="viz-item-btn" onclick="openLightbox('assets/images/gmm_confusion.png', 'Gaussian Mixture Model - Confusion Matrix')">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="viz-item-content">
+                            <span class="viz-item-category">Model Performance</span>
+                            <h4>GMM Model Results</h4>
+                            <p>Probabilistic detection model performance with density estimation metrics</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <button class="lightbox-close" onclick="closeLightbox()">
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="lightbox-image" src="" alt="">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- Tech Stack Section -->
+    <section id="tech-stack" class="section tech-stack">
+        <div class="container">
+            <h2 class="section-title">Technology Stack</h2>
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3><i class="fas fa-robot"></i> Machine Learning / AI</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">scikit-learn</span>
+                        <span class="tech-tag">XGBoost</span>
+                        <span class="tech-tag">One-Class SVM</span>
+                        <span class="tech-tag">Isolation Forest</span>
+                        <span class="tech-tag">GMM</span>
+                        <span class="tech-tag">NumPy</span>
+                        <span class="tech-tag">Pandas</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Streamlit</span>
+                        <span class="tech-tag">REST API</span>
+                        <span class="tech-tag">Server-Sent Events</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3><i class="fas fa-paint-brush"></i> Frontend</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Bootstrap 5</span>
+                        <span class="tech-tag">Plotly.js</span>
+                        <span class="tech-tag">DataTables</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Infrastructure</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Jupyter Notebooks</span>
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">Kaggle Datasets</span>
+                        <span class="tech-tag">Netlify</span>
+                        <span class="tech-tag">Streamlit Cloud</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="section video-section">
+        <div class="container">
+            <h2 class="section-title">Demo Video</h2>
+            <p class="section-subtitle">Watch the complete project demonstration and walkthrough</p>
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://drive.google.com/file/d/1cYbipM4TDjMiBVwnWtOiV1lphqofg9Ht/preview" 
+                    allow="autoplay" 
+                    allowfullscreen
+                    class="video-iframe">
+                </iframe>
+            </div>
+            <div class="video-cta">
+                <a href="https://drive.google.com/file/d/1cYbipM4TDjMiBVwnWtOiV1lphqofg9Ht/view?usp=sharing" 
+                   class="btn btn-primary" 
+                   target="_blank" 
+                   rel="noopener">
+                    <i class="fas fa-external-link-alt"></i> Watch on Google Drive
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Links Section -->
+    <section id="links" class="section links">
+        <div class="container">
+            <h2 class="section-title">Resources & Links</h2>
+            <div class="links-grid">
+                <a href="#" class="link-card">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub Repository</h3>
+                    <p>Source code and documentation</p>
+                </a>
+                <a href="#" class="link-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Documentation</h3>
+                    <p>Complete project documentation</p>
+                </a>
+                <a href="#video" class="link-card">
+                    <i class="fas fa-video"></i>
+                    <h3>Demo Video</h3>
+                    <p>Project demonstration video</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SIEM Security Solution</h4>
+                    <p>"less noise more security"</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#models">AI Models</a></li>
+                        <li><a href="#dashboard">Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#methodology">Methodology</a></li>
+                        <li><a href="#results">Results</a></li>
+                        <li><a href="#visualizations">Visualizations</a></li>
+                        <li><a href="#tech-stack">Tech Stack</a></li>
+                        <li><a href="#video">Video</a></li>
+                        <li><a href="#links">Links</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SIEM Security Solution. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
