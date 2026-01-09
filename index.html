@@ -26,55 +26,43 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Enhanced Navigation Header -->
     <nav class="navbar" id="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <img src="assets/logos/siem-logo.png" alt="SIEM Enterprise Security Logo" class="logo-img">
-                </div>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="#hero" class="nav-link">Home</a></li>
-                    <li><a href="#overview" class="nav-link">Overview</a></li>
-                    <li><a href="#features" class="nav-link">Features</a></li>
-                    <li><a href="#models" class="nav-link">AI Models</a></li>
-                    <li><a href="#dashboard" class="nav-link">Dashboard</a></li>
-                    <li><a href="#methodology" class="nav-link">Methodology</a></li>
-                    <li><a href="#results" class="nav-link">Results</a></li>
-                    <li><a href="#visualizations" class="nav-link">Visualizations</a></li>
-                    <li><a href="#tech-stack" class="nav-link">Tech Stack</a></li>
-                    <li><a href="#video" class="nav-link">Video</a></li>
-                    <li><a href="#links" class="nav-link">Links</a></li>
-                </ul>
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+        <div class="navbar-content">
+            <div class="logo-wrapper" id="logo">
+                <img src="assets/logos/siem-logo.png" alt="SIEM Enterprise Security Logo" class="logo-img">
+                <span class="logo-text">SIEM</span>
             </div>
+            <div class="scroll-progress-bar" id="scrollProgressBar"></div>
         </div>
     </nav>
+
+    <!-- Scroll Progress Line -->
+    <div class="progress-indicator"></div>
+
+    <!-- Particle Network Background -->
+    <div id="particleNetwork" class="particle-network"></div>
 
     <!-- Hero Section -->
     <section id="hero" class="hero">
         <div class="hero-background"></div>
         <div class="container">
             <div class="hero-content">
-                <div class="hero-logo">
+                <div class="hero-logo" data-aos="fade-down" data-aos-duration="800">
                     <img src="assets/logos/siem-logo.png" alt="SIEM Enterprise Security Logo" class="hero-logo-img">
                 </div>
-                <h1 class="hero-title">
+                <h1 class="hero-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                     Elevating Enterprise<br>
                     Security Using a<br>
                     <span class="accent-text">SIEM Solution</span>
                 </h1>
-                <p class="hero-tagline">"less noise more security"</p>
-                <p class="hero-description">
-                    AI-powered network anomaly detection and threat classification system 
+                <p class="hero-tagline" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">"less noise more security"</p>
+                <p class="hero-description" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">
+                    AI-powered network anomaly detection and threat classification system
                     that reduces alert fatigue and enhances security operations.
                 </p>
-                <div class="hero-buttons">
-                    <a href="#overview" class="btn btn-secondary">
+                <div class="hero-buttons" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <a href="#overview" class="btn btn-secondary btn-ripple">
                         <i class="fas fa-arrow-down"></i> Learn More
                     </a>
                 </div>
@@ -85,12 +73,80 @@
         </div>
     </section>
 
-    <!-- Overview Section -->
-    <section id="overview" class="section overview">
+    <!-- Navigation Carousel -->
+    <section class="carousel-section" id="carouselSection">
         <div class="container">
-            <h2 class="section-title">Project Overview</h2>
+            <div class="carousel-container">
+                <button class="carousel-nav carousel-nav-prev" id="carouselPrev" aria-label="Previous carousel item">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="carousel-card" data-target="overview" tabindex="0" role="button">
+                            <div class="card-glow"></div>
+                            <div class="carousel-icon"><i class="fas fa-chart-pie"></i></div>
+                            <div class="carousel-label">Overview</div>
+                        </div>
+                        <div class="carousel-card" data-target="features" tabindex="0" role="button">
+                            <div class="card-glow"></div>
+                            <div class="carousel-icon"><i class="fas fa-star"></i></div>
+                            <div class="carousel-label">Features</div>
+                        </div>
+                        <div class="carousel-card" data-target="models" tabindex="0" role="button">
+                            <div class="card-glow"></div>
+                            <div class="carousel-icon"><i class="fas fa-brain"></i></div>
+                            <div class="carousel-label">AI Models</div>
+                        </div>
+                        <div class="carousel-card" data-target="dashboard" tabindex="0" role="button">
+                            <div class="card-glow"></div>
+                            <div class="carousel-icon"><i class="fas fa-chart-line"></i></div>
+                            <div class="carousel-label">Dashboard</div>
+                        </div>
+                        <div class="carousel-card" data-target="methodology" tabindex="0" role="button">
+                            <div class="card-glow"></div>
+                            <div class="carousel-icon"><i class="fas fa-cogs"></i></div>
+                            <div class="carousel-label">Methodology</div>
+                        </div>
+                        <div class="carousel-card" data-target="results" tabindex="0" role="button">
+                            <div class="card-glow"></div>
+                            <div class="carousel-icon"><i class="fas fa-check-circle"></i></div>
+                            <div class="carousel-label">Results</div>
+                        </div>
+                        <div class="carousel-card" data-target="visualizations" tabindex="0" role="button">
+                            <div class="card-glow"></div>
+                            <div class="carousel-icon"><i class="fas fa-images"></i></div>
+                            <div class="carousel-label">Visualizations</div>
+                        </div>
+                        <div class="carousel-card" data-target="tech-stack" tabindex="0" role="button">
+                            <div class="card-glow"></div>
+                            <div class="carousel-icon"><i class="fas fa-tools"></i></div>
+                            <div class="carousel-label">Tech Stack</div>
+                        </div>
+                        <div class="carousel-card" data-target="video" tabindex="0" role="button">
+                            <div class="card-glow"></div>
+                            <div class="carousel-icon"><i class="fas fa-video"></i></div>
+                            <div class="carousel-label">Demo Video</div>
+                        </div>
+                        <div class="carousel-card" data-target="links" tabindex="0" role="button">
+                            <div class="card-glow"></div>
+                            <div class="carousel-icon"><i class="fas fa-link"></i></div>
+                            <div class="carousel-label">Resources</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-nav carousel-nav-next" id="carouselNext" aria-label="Next carousel item">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="section overview" data-aos="fade-up" data-aos-duration="800" data-aos-offset="200">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="600">Project Overview</h2>
             <div class="overview-grid">
-                <div class="overview-card">
+                <div class="overview-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
                     <div class="card-icon">
                         <i class="fas fa-exclamation-triangle"></i>
                     </div>
@@ -852,4 +908,3 @@
     <script src="js/main.js"></script>
 </body>
 </html>
-
